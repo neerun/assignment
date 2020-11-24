@@ -1,0 +1,28 @@
+package day18;
+
+public class Question33 {
+   // Write a Program to display numbers in ascending order in array
+	public static void main(String[] args) {
+		
+    int [] arr= { 2, 9, 6, 4, 3,};
+     int temp;
+     for(int i=0;i<arr.length;i++) {
+    	  for(int j=i; j<arr.length; j++) {
+    		 if(arr[i] > arr[j]) {
+    		 temp = arr[i];
+    		 arr[i] = arr[j];
+    		  arr[j] = temp;
+    		 } 
+    	 }
+     }
+    for(int i = 0;i<arr.length; i++) {
+    	System.out.print(" "+ arr[i]+ "");
+    }
+	}
+	
+}
+
+     
+
+	
+    
